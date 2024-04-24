@@ -16,8 +16,8 @@ function AllRoutes() {
       <Router>
         <Routes>
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/landing-page" element={<LandingPage />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/home" element={<LandingPage />} />
+          <Route path="/" element={<Resources />} />
           <Route path="/hr-login" element={<HRLoginScreen />} />
           <Route path="/ris-dashboard" element={<RISDashboard />} />
         
