@@ -7,25 +7,28 @@ function LandingPage() {
     <>
     
     <Navbar/>
-    <div className="pt-[70px] bg-bodybg justify-center ">
+    <div className="pt-[70px]  justify-center "
+    style={{
+      background: "linear-gradient( rgba(199, 244, 174, 5), rgba(24, 53, 171, 1) )"
+    }}>
     <div className='flex flexbox  flex-wrap mx-auto px-[30px] justify-center gap-[15%] align-middle'>
           <div className="block font-bold justify-start my-[15px] md:w-1/3">
             <div className="text-3xl pb-[15px] ">
             Step Into The Future HR Management. 
             </div>
-            <div className='flex flexbox text-sm '>
+            <div className='flex flexbox text-sm pb-1 '>
               <img src="checked.svg" alt="" />
               <span>Experience the power of personalized solutions</span>
             </div>
-            <div className='flex flexbox text-sm '>
+            <div className='flex flexbox text-sm pb-1'>
               <img src="checked.svg" alt="" />
               <span>Enjoy unified data</span>
             </div>
-            <div className='flex flexbox text-sm '>
+            <div className='flex flexbox text-sm pb-1'>
               <img src="checked.svg" alt="" />
               <span>Receive Predictive Insight</span>
             </div>
-            <div className='flex flexbox text-sm'>
+            <div className='flex flexbox text-sm pb-1'>
               <img src="checked.svg" alt="" />
               <span>Experience Seamless Operations</span>
             </div>
@@ -33,7 +36,7 @@ function LandingPage() {
           <div className="w-[431px] "><img src="picture2.svg" alt="picture" className=' rounded-lg'/></div>
         </div>
 
-        <div className='text-white bg-ourquest bg-cover font-bold bg-center w-6/7 h-auto rounded-lg pb-4 px-6 my-[50px] mx-[10px] flex flexbox  justify-center align-middle   flex-wrap'>
+        <div className='text-white bg-blue-400 border-2 border-blue-500 bg-cover font-bold bg-center w-6/7 h-auto rounded-lg pb-4 px-6 my-[50px] mx-[10px] flex flexbox  justify-center align-middle   flex-wrap'>
                     <h2 className='text-bold text-xl py-4 h-10%'>Meet Our Team</h2>
                     
                     <div className="card flex flexbox  justify-center align-middle space-around-[60px]   space-x-[40px] text-black flex-wrap">
@@ -124,9 +127,9 @@ decisions, and stay ahead effortlessly.
                 <div className="flex flexbox justify-between mx-[30px] flexwrap align-middle">
                   
                   <div className='w-[431px]'>
-                  <img src="feature1.svg" alt="feature1"  className=' ' />
+                  <img src="feature1.svg" alt="feature1" />
                   </div>
-                    <div className='bg-slate-200 px-[15px] mx-[30px] my-[30px] rounded-2xl py-[30px] h-auto w-2/3 sm:w-[280px]'>
+                    <div className='bg-slate-200 px-[15px] mx-[30px] my-[30px] rounded-2xl py-[30px] h-auto w-1/2 sm:w-[280px]'>
                         <h2 className='font-bold  my-[10px]'>Efficient Employee Database Management</h2>
                         <div className='font-thin text-start text-sm'>
                           Streamline your HR processes with our comprehensive database 
@@ -140,7 +143,7 @@ and a user-friendly interface. Experience hassle-free management of
                 </div>
                 <div className="flex flexbox justify-between mx-[30px] flexwrap align-middle">
                   
-                    <div className='bg-slate-200 px-[15px] mx-[30px] rounded-2xl py-[30px] my-[30px] h-auto w-2/3 sm:w-[280px]'>
+                    <div className='bg-slate-200 px-[15px] mx-[30px] rounded-2xl py-[30px] my-[30px] h-auto w-1/2 sm:w-[280px]'>
                         <h2 className='font-bold  my-[10px]'>Employee Self-Service Portal</h2>
                         <div className='font-thin text-start text-sm'>
                           Empower your workforce with easy access to personal information, pay stubs, benefits enrollment, leave balances, and performance reviews. Reduce HR administrative burden with streamlined self-service capabilities

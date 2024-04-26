@@ -7,9 +7,9 @@ function Resources() {
     <div>
       <Navbar />
     <div
-      className="flex flex-col bg-bodybg justify-center items-center h-screen"
+      className="flex flex-col  justify-center items-center h-screen"
       style={{
-        // background: "linear-gradient(180deg, #7C90E2 0%, #9BEA70 100%)",
+        background: "linear-gradient( rgba(199, 244, 174, 5), rgba(24, 53, 171, 1) )",
         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", 
       }}
     >

@@ -8,7 +8,10 @@ function About() {
     
     <>
     <Navbar/> 
-        <div id="About" className='text-center bg-bodybg bg-contain md:w-100 h-auto mx-0 my-0 justify-content-center '>
+        <div id="About" className='text-center bg-cover md:w-100 h-auto mx-0 my-0 justify-center '
+        style={{
+            background: "linear-gradient( rgba(199, 244, 174, 5), rgba(24, 53, 171, 1) )"
+          }}>
             <h1 className="header text-3xl p-8 font-bold h-16">Who We Are</h1>
             <div className="flex w-full my-4 mx-0 justify-center items-start flex-wrap gap-[25%] ">
                 <div className="w-[431px]  my-4 mx-4"><img src="picture1.svg" alt="picture" className=' rounded-lg my-2 '/></div>
@@ -18,7 +21,7 @@ function About() {
     of HR innovation. With personalised features and predictive analytics, RIS reshapes how businesses manage their workforce, fostering informed decisions and strategic alignment effortlessly.</p>
                 </div>
             </div>
-            <div className='text-white bg-ourquest bg-cover bg-center w-3/4 h-auto rounded-lg pb-4 px-6 my-auto mx-[auto] block'>
+            <div className='text-white bg-blue-400 border-2 border-blue-500 w-3/4 h-auto rounded-lg pb-4 px-6 my-auto mx-[auto] block'>
                     <h2 className='text-bold text-xl py-2 h-10%'>Our Quest</h2>
                     <p className='font-light px-[30px] h-20% py-2'>"Our Mission at RIS is to revolutionize HR management by providing customizable solutions that empower organizations to thrive. We strive to streamline operations, foster informed decision-making, and drive strategic alignment for our clients' success."</p>
             </div>

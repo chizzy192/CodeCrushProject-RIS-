@@ -6,9 +6,13 @@ function ContacUs() {
   return (
     <>
     <Navbar/>
-        <div className="bg-bodybg bg-contain text-center md:w-100 h-auto mx-auto justify-content-center">
-        <div className='text-white bg-ourquest bg-cover bg-center my-[4%] w-3/4 h-auto rounded-lg pb-4 px-6  mx-auto block'>
-                    <h2 className='text-bold text-xl py-2 h-10%'>Reach Out, We're Here for You</h2>
+        <div className="  text-center md:w-100 h-vh py-[4%] mx-auto my-0 bg-cover justify-center"
+        style={{
+          background: "linear-gradient( rgba(199, 244, 174, 5), rgba(24, 53, 171, 1) )"
+        }}>
+        <div className='text-white bg-blue-400 border-2 border-blue-500  w-3/4 h-auto rounded-lg pb-4 px-6  mx-auto block'
+        >
+                    <h2 className='text-bold text-xl py-3 h-10%'>Reach Out, We're Here for You</h2>
                     <p className='font-light px-[30px] h-20% py-2'>Don't hesitate to contact us for any assistance or inquiries. Our team is dedicated to ensuring your success with RIS. 
 Let us help you make the most of your HR management journey.</p>
             </div>
