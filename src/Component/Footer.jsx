@@ -1,67 +1,54 @@
-import React from 'react';
-import RISLogo from '../assets/RISLogo.png'; // Import your company logo
- 
+import { Link } from "react-router-dom"
 function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-8" style={{
-      width: '1520px',
-      height: '200px',
-      top: '2209px',
-    }}>
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
-        {/* Company Logo */}
-        <div className="flex items-center">
-          <img src={RISLogo} alt="Company Logo" className="h-10 mr-4" />
-        </div>
-        {/* Social Icons */}
-        <div className="flex items-center mt-4 sm:mt-0">
-          {/* Instagram Icon */}
-          <a href="#" className="text-white hover:text-gray-400 transition duration-300">
-            <i className="fab fa-instagram"></i>
-          </a>
-          {/* Twitter Icon */}
-          <a href="#" className="text-white hover:text-gray-400 transition duration-300">
-            <i className="fab fa-twitter"></i>
-          </a>
-          {/* TikTok Icon */}
-          <a href="#" className="text-white hover:text-gray-400 transition duration-300">
-            <i className="fab fa-tiktok"></i>
-          </a>
-          {/* Facebook Icon */}
-          <a href="#" className="text-white hover:text-gray-400 transition duration-300">
-            <i className="fab fa-facebook"></i>
-          </a>
-        </div>
-        {/* Columns with Texts */}
-        <div className="flex justify-between mt-4 sm:mt-0">
-          {/* First Column */}
-          <div className="mr-8">
-            <h2>Support</h2>
-            <p>Articles</p>
-            <p>Tutorials</p>
-            <p>FAQs</p>
-            <p>Contact us</p>
-            <p>Privacy Policy</p>
+    <>
+        <div className="bg-blue-900 w-full h-auto flex   justify-between flexbox flex-wrap py-[40px] px-[40px]">
+          <div className="block py-9">
+            <img src="LOGO.svg" alt="logo" className="my-1"/>
+                <div className="flex space-x-0">
+                    <a href="https://www.instagram.com"><img src="ig.svg" alt="igicon"/></a>
+                    <a href="https://www.x.com"><img src="x.svg" alt="xicon" /></a>
+                    <a href="https://www.tiktok.com"><img src="tiktok.svg" alt="tiktokicon" /></a>
+                    <a href="https://www.facebook.com"><img src="facebook.svg" alt="facebookicon" /></a>
+                </div>
           </div>
-          {/* Second Column */}
-          <div className="mr-8">
-            <h2>Company</h2>
-            <p>About us</p>
-            <p>The Team</p>
-            <p>Partnerships</p>
-            <p>Awards</p>
-            <p>Press</p>
-          </div>
-          {/* Third Column */}
-          <div>
-            <h2>More</h2>
-            <p>Partner Program</p>
-            <p>Customers story</p>
-          </div>
+          <div className="text-white  my-6 gap-x-4 md:w-1/3 text-start flex flexbox justify-between flex-wrap">
+            <div className="block">
+              <ul>
+                
+                <li className="font-bold">Support</li>
+                <li className="text-xs font-thin "><Link to="">Articles</Link></li>
+                <li className="text-xs font-thin "><Link to="">FAQs</Link></li>
+                <li className="text-xs font-thin "><Link to="">Tutorials</Link></li>
+                <li className="text-xs font-thin "><Link to="/contact">Contact us</Link></li>
+                <li className="text-xs font-thin "><Link to="">Privacy Policy</Link></li>
+                
+              </ul>
+                </div>
+                <div className="block">
+                <ul>
+              <li className="font-bold">Contact Us</li>
+                <li className="text-xs font-thin "><Link to="/about">About us</Link></li>
+              <li className="text-xs font-thin "><Link to="">The Team</Link></li>
+              <li className="text-xs font-thin "><Link to="">Partnership</Link></li>
+              <li className="text-xs font-thin "><Link to="">Awards</Link></li>
+              <li className="text-xs font-thin "><Link to="">Press</Link></li>
+              
+              
+            </ul>
+              </div>
+              <div className="block">
+              <ul>
+              <li className="font-bold">More</li>
+              <li className="text-xs font-thin "><a href="">Partner Program</a></li>
+             <li className="text-xs font-thin "><a href="">Customer Stories</a></li>
+             </ul>
+              </div>
+      
+            </div>
         </div>
-      </div>
-    </footer>
-  );
+    </>
+  )
 }
- 
-export default Footer;
+
+export default Footer

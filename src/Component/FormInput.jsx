@@ -1,0 +1,17 @@
+
+
+const FormInput = (props) => {
+  return (
+    <div  className=" ">
+      <input required
+      value={props.value}
+      name={props.name}
+      className="py-[10px]  px-[10px] border-2 border-black mb-[20px] w-[100%] " 
+      placeholder={props.placeholder} 
+      type={props.type}  />
+      
+    </div>
+  )
+}
+
+export default FormInput

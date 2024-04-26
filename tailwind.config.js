@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+  
+    screens:{
+      
+    },
+  extend: {
+    backgroundImage: {
+      'bodybg': "url('bodybg.svg')",
+      'ourquest':"url('ourquest.svg')",
+    },
   },
+},
   plugins: [],
 }
-

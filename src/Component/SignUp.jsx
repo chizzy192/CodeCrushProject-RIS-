@@ -7,13 +7,13 @@ function SignUp() {
   return (
     <div>
       <Navbar />
-    <div className="flex flex-col justify-center items-center h-screen" style={{ 
+    <div className="flex flex-col py-[30px] justify-center items-center h-screen" style={{ 
       background: 'linear-gradient(135deg, #7C90E2, #9BEA70)',
     }}>
       {/* Company Logo */}
-      <img src={Logo} alt="Company Logo" className="h-10 mb-8" style={{ width: '150.58px', height: '56.4px', marginRight: '1200px', marginTop: '25px' }} />
+      
       {/* Sign Up Header */}
-      <h2 className="text-black text-lg font-bold mb-1" style={{ 
+      <h2 className="text-black text-lg font-bold ml-[200px] mb-1" style={{ 
         fontFamily: 'Noto Serif Bengali',
         fontSize: '35px',
         fontWeight: '800',
@@ -23,11 +23,11 @@ function SignUp() {
         marginRight: '900px',
       }}>SIGN UP</h2>
       {/* Inputs Section and Image Section */}
-      <div className="flex justify-between items-center w-full ">
+      <div className="flex justify-between items-center h-auto w-full ">
         {/* Inputs Section */}
         <div className="flex flex-col justify-center items-center p-8 bg-gray-100 rounded-lg" style={{ 
           width: '490px',
-          height: '550px',
+          height: '600px',
           borderRadius: '60px',
           marginLeft: '140px'
         }}>
