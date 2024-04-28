@@ -16,9 +16,9 @@ const Form = () => {
     };
   return (
     <>
-    <div className="w-full pb-[40px] px-[20px] mx-auto justify-center">
+    <div className="w-[100%] max-sm:w-[90%] pb-[40px] px-[20px] mx-auto justify-center">
         <form onSubmit={handleSubmit}>
-            <div className="flex flexbox mx-auto flex-wrap gap-3 justify-center   h-full">
+            <div className="flex flexbox max-sm:flex-col flex-wrap w-full justify-center gap-40  h-full">
                 <FormInput name="firstname" placeholder="First Name..." type="text"  />
                 <FormInput name="lastname" placeholder="Last Name..." type="text"/>
                 </div>

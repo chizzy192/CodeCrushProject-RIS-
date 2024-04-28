@@ -1,191 +1,188 @@
 import React from "react";
-import SmartPeople from "../assets/SmartPeople.png";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-function Resources() {
+import Logo from "../assets/RISLogo.png";
+import DashboardIcon from "../assets/Home.png";
+import NotificationIcon from "../assets/Notification.png";
+import ChatIcon from "../assets/Chat.png";
+import AnalyticsIcon from "../assets/BarChat.png";
+import FileIcon from "../assets/Document.png";
+import SettingsIcon from "../assets/Setting.png";
+import LogoutIcon from "../assets/Logout.png";
+import HeroImage from "../assets/Manager.png";
+import Image1 from "../assets/Rectangle1.png";
+import Image2 from "../assets/Rectangle2.png";
+import Image3 from "../assets/Rectangle3.png";
+import Image4 from "../assets/Rectangle4.png";
+
+const RISDashboard = () => {
   return (
+    <div className="flex h-screen overflow-hidden">
+      {/* Sidebar */}
+      <div className="w-72 bg-gray-700 text-white flex flex-col items-center justify-between space-y-8 h-screen overflow-y-auto">
+        {/* Company Logo */}
+        <img src={Logo} alt="Company Logo" className="mt-4" />
+
+        {/* Sidebar Items */}
+        <div className="space-y-2">
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img src={DashboardIcon} alt="Dashboard" className="w-6 h-6" />
+              <span className="ml-2">Dashboard</span>
+            </div>
+          </div>
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img
+                src={NotificationIcon}
+                alt="Notification"
+                className="w-6 h-6"
+              />
+              <span className="ml-2">Notification</span>
+            </div>
+          </div>
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img src={ChatIcon} alt="Chat" className="w-6 h-6" />
+              <span className="ml-2">Chats</span>
+            </div>
+          </div>
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img src={AnalyticsIcon} alt="Analytics" className="w-6 h-6" />
+              <span className="ml-2">Analytics</span>
+            </div>
+          </div>
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img src={FileIcon} alt="Files" className="w-6 h-6" />
+              <span className="ml-2">Files</span>
+            </div>
+          </div>
+          <div className="sidebar-item">
+            <div
+              className="sidebar-item-wrapper bg-black flex items-center"
+              style={{
+                borderRadius: "30px",
+                width: "150px",
+                height: "45px",
+                marginBottom: "25px",
+              }}
+            >
+              <img src={SettingsIcon} alt="Settings" className="w-6 h-6" />
+              <span className="ml-2">Settings</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Logged in User */}
+        <div className="flex items-center">
+          <img
+            src="/path/to/user_avatar.png"
+            alt="User Avatar"
+            className="w-8 h-8 rounded-full mr-2"
+          />
+          <span>David</span>
+        </div>
+
+        {/* Logout Button */}
+        <div className="w-full bg-gray-600 flex items-center justify-center rounded-tl-3xl">
+          <img src={LogoutIcon} alt="Logout" className="w-6 h-6" />
+          <span className="ml-2">Logout</span>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex flex-col flex-grow bg-gray-200 p-8 overflow-y-auto">
+        {/* Header */}
+        <h1 className="text-3xl font-bold mb-4">Welcome Back David!</h1>
+
+        {/* Hero Section */}
+        <div style={{ backgroundColor: "#B5B5B580", borderRadius: "35px", }}>
+  <div className="flex items-center justify-between mb-8">
     <div>
-      <Navbar />
-    <div
-      className="flex flex-col  justify-center items-center h-screen"
-      style={{
-        background: "linear-gradient( rgba(199, 244, 174, 5), rgba(24, 53, 171, 1) )",
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)", 
-      }}
-    >
-      {/* Our Resources Header */}
-      <h2
-        className="text-black text-lg font-bold mb-1"
-        style={{
-          fontFamily: "Noto Serif Bengali",
-          fontSize: "35px",
-          fontWeight: "800",
-          lineHeight: "55.79px",
-          textAlign: "center",
-          marginTop: "55px",
-          marginBottom: "0px",
-        }}
-      >
-        Our Resources
+      <h2 className="text-xl font-bold">
+        What do you have planned today?
       </h2>
-      {/* Rectangular Div with Background Image */}
-      <div
-        className="relative"
-        style={{
-          width: "1100px",
-          height: "800px",
-          top: "100px",
-          left: "10px",
-          gap: "0px",
-          borderRadius: "50px 50px 50px 50px",
-          border: "15px solid #2E660F",
-          opacity: "0.5",
-          backgroundImage: `url(${SmartPeople})`, 
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          marginBottom: "190px",
-        }}
-      >
-        {/* Top Row of Rectangles */}
-        <div className="absolute top-0 left-0 w-full flex justify-between">
-          <div
-            className="w-1/5 h-20 flex items-center justify-center "
-            style={{ width: "240px", height: "90px" }}
-          >
-            <button
-              className="text-black font-bold"
-              style={{
-                fontFamily: "Noto Serif Bengali",
-                fontSize: "28px",
-                fontWeight: "700",
-                lineHeight: "44.63px",
-                textAlign: "center",
-                borderRadius: "25px",
-                width: "200px",
-                height: "60px",
-                background: "#576C93",
-                display: "flex", 
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: "190px",
-                marginLeft: "90px",
-              }}
-            >
-              Article
-            </button>
+      <p>Let’s take a look, shall we.</p>
+    </div>
+    <div className="flex justify-center">
+      <div className="w-60 h-32 bg-green-700 rounded-full flex items-center justify-center mr-3">
+        <span className="text-white text-xl font-bold">
+          Today's schedule
+        </span>
+      </div>
+      <div className="flex items-center">
+        <img
+          src={HeroImage}
+          alt="Image"
+          className="w-20 h-20 rounded-full"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+        {/* Images Section */}
+        <div className="grid grid-cols-2 gap-8">
+          <div>
+            <img src={Image1} alt="Image 1" className="w-30 h-25 mb-2" />
+            <p>David's Database</p>
           </div>
-          <div
-            className="w-1/5 h-20 flex items-center justify-center text-white"
-            style={{ width: "240px", height: "90px" }}
-          >
-            <button
-              className="text-black font-bold"
-              style={{
-                fontFamily: "Noto Serif Bengali",
-                fontSize: "28px",
-                fontWeight: "700",
-                lineHeight: "44.63px",
-                textAlign: "center",
-                borderRadius: "25px",
-                width: "200px",
-                height: "60px",
-                background: "#576C93",
-                display: "flex", 
-                alignItems: "center", 
-                justifyContent: "center",
-                marginTop: "190px",
-              }}
-            >
-              Tutorial
-            </button>
+          <div>
+            <img src={Image2} alt="Image 2" className="w-30 h-25 mb-2" />
+            <p>Request PTO</p>
           </div>
-          <div
-            className="w-1/5 h-20 flex items-center justify-center "
-            style={{ width: "240px", height: "90px" }}
-          >
-            <button
-              className="text-black font-bold"
-              style={{
-                fontFamily: "Noto Serif Bengali",
-                fontSize: "28px",
-                fontWeight: "700",
-                lineHeight: "44.63px",
-                textAlign: "center",
-                borderRadius: "25px",
-                width: "200px",
-                height: "60px",
-                background: "#576C93",
-                display: "flex", 
-                alignItems: "center", 
-                justifyContent: "center",
-                marginTop: "190px",
-                marginRight: "40px",
-              }}
-            >
-              Privacy Policy
-            </button>
+          <div>
+            <img src={Image3} alt="Image 3" className="w-30 h-25 mb-2" />
+            <p>Edit Employee's Details</p>
           </div>
-        </div>
-        {/* Bottom Row of Rectangles */}
-        <div className="absolute bottom-0 left-0 w-full flex justify-between">
-          <div
-            className="w-1/5 h-20 flex items-center justify-center  "
-            style={{ width: "240px", height: "90px" }}
-          >
-            <button
-              className="text-black font-bold"
-              style={{
-                fontFamily: "Noto Serif Bengali",
-                fontSize: "28px",
-                fontWeight: "700",
-                lineHeight: "44.63px",
-                textAlign: "center",
-                borderRadius: "25px",
-                width: "200px",
-                height: "90px",
-                background: "#576C93",
-                display: "flex", 
-                alignItems: "center",
-                justifyContent: "center",
-                marginBottom: "10px",
-                marginLeft: "250px",
-              }}
-            >
-              Legal Information
-            </button>
-          </div>
-          <div
-            className="w-1/5 h-20 flex items-center justify-center "
-            style={{ width: "240px", height: "90px" }}
-          >
-            <button
-              className="text-black font-bold"
-              style={{
-                fontFamily: "Noto Serif Bengali",
-                fontSize: "28px",
-                fontWeight: "700",
-                lineHeight: "44.63px",
-                textAlign: "center",
-                borderRadius: "25px",
-                width: "200px",
-                height: "90px",
-                background: "#576C93",
-                display: "flex", 
-                alignItems: "center", 
-                justifyContent: "center",
-                marginBottom: "10px",
-                marginRight: "270px",
-              }}
-            >
-              Software Information
-            </button>
+          <div>
+            <img src={Image4} alt="Image 4" className="w-30 h-25 mb-2" />
+            <p>Company Event</p>
           </div>
         </div>
       </div>
-      </div>
-     <Footer/>
     </div>
   );
-}
+};
 
-export default Resources;
+export default RISDashboard;

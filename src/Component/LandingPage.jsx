@@ -36,52 +36,52 @@ function LandingPage() {
           <div className="w-[431px] "><img src="picture2.svg" alt="picture" className=' rounded-lg'/></div>
         </div>
 
-        <div className='text-white bg-blue-400 border-2 border-blue-500 bg-cover font-bold bg-center w-6/7 h-auto rounded-lg pb-4 px-6 my-[50px] mx-[10px] flex flexbox  justify-center align-middle   flex-wrap'>
-                    <h2 className='text-bold text-xl py-4 h-10%'>Meet Our Team</h2>
+        <div className='text-white bg-blue-400 border-2 border-blue-500 bg-cover font-bold bg-center w-6/7 h-auto rounded-lg pb-4 px-6 my-[50px] mx-[10px]  justify-center align-middle   '>
+                    <h2 className='text-bold text-center text-xl py-4 h-10% w-100%'>Meet Our Team</h2>
                     
-                    <div className="card flex flexbox  justify-center align-middle space-around-[60px]   space-x-[40px] text-black flex-wrap">
+                    <div className="card flex flexbox  justify-center align-middle  text-black flex-wrap">
                 
-                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
+                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block  rounded-lg">
                     
-                    <div className=" items-center space-x-[50px] justify-center mx-auto  ">
+                    <div className="  justify-center mx-auto  ">
         
                         <img src="team1.svg" alt="" className="w-[70px] rounded-full my-[20px]  mx-auto h-[70px]" />
-                        <div className="justify-center w-full">
-                        <div className="font-bold text-lg justify-center w-3/4">Adaeze Eze</div>
-                    <div className="text-xs font-thin w-3/4 mx-auto ">Lead Web Developer</div>
+                        <div className="justify-center  text-center">
+                        <div className="font-bold text-lg text-center justify-center ">Adaeze Eze</div>
+                        <div className="text-xs font-thin  mx-auto ">Lead Web Developer</div>
                         </div>
                     </div>
                 </div>
                 <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
                     
-                    <div className=" items-center space-x-[50px] justify-center mx-auto  ">
+                    <div className="justify-center mx-auto  ">
         
                         <img src="team2.svg" alt="" className="w-[70px] rounded-full my-[20px]  mx-auto h-[70px]" />
-                        <div className=" justify-center w-full">
-                        <div className="font-bold text-lg justify-center w-3/4 px-auto ">Chioma Nwosu</div>
-                    <div className="text-xs font-thin w-3/4 mx-auto ">Software Engineer</div>
+                        <div className=" justify-center text-center">
+                        <div className="font-bold text-lg justify-center  px-auto ">Chioma Nwosu</div>
+                    <div className="text-xs font-thin  mx-auto ">Software Engineer</div>
                         </div>
                     </div>
                 </div>
                 <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
                     
-                    <div className=" items-center space-x-[50px] justify-center mx-auto  ">
+                    <div className=" justify-center mx-auto  ">
         
                         <img src="team3.svg" alt="" className="w-[70px] rounded-full my-[20px]  mx-auto h-[70px]" />
-                        <div className="justify-center w-full">
-                        <div className="font-bold text-lg justify-center w-3/4 px-auto ">Kelvin Nguyen</div>
-                    <div className="text-xs font-thin w-3/4 mx-auto ">QA tester</div>
+                        <div className="justify-center text-center">
+                        <div className="font-bold text-lg justify-center  px-auto ">Kelvin Nguyen</div>
+                    <div className="text-xs font-thin  mx-auto ">QA tester</div>
                         </div>
                     </div>
                 </div>
                 <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
                     
-                    <div className=" items-center space-x-[50px] justify-center mx-auto  ">
+                    <div className=" justify-center mx-auto  ">
         
                         <img src="team4.svg" alt="" className="w-[70px] rounded-full my-[20px]  mx-auto h-[70px]" />
-                        <div className="justify-center w-full">
-                          <div className="font-bold text-lg justify-center w-3/4 px-auto ">Tolulope Adewale</div>
-                          <div className="text-xs font-thin w-3/4 mx-auto ">UI/UX Designer</div>
+                        <div className="justify-center text-center">
+                          <div className="font-bold text-lg justify-center px-auto ">Tolulope Adewale</div>
+                          <div className="text-xs font-thin mx-auto ">UI/UX Designer</div>
 
                         </div>
                     </div>
@@ -89,19 +89,19 @@ function LandingPage() {
                 </div>
                 
             </div>
-            <div className='bg-white flex flexbox flex-wrap w-full py-[30px] rounded-lg px-[30px] text-black justify-center text-center'>
+            <div className='bg-white w-full py-[30px]   text-black text-center bg-cover font-bold bg-center  h-auto pb-4 px-6 my-[50px]   justify-center align-middle'>
                   <div className="font-bold text-center">Why Choose RIS?</div>
-                  <div className="flex flexbox flex-wrap ">
-                  <div className=" w-1/3">
-                    <img src="bar.svg" alt="bar" className='mx-auto'/>
+                  <div className="card flex lg:flex-row max-md:flex-col  justify-between align-middle  w-[100%]   text-black flex-wrap">
+                  
+                    <div className=" w-[31%] max-md:w-auto m-auto  h-auto block">
+                      <img src="bar.svg" alt="bar" className='mx-auto'/>
                     <div>
                     Unlock predictive HR insights with RIS, anticipate trends, make data-driven 
 decisions, and stay ahead effortlessly.
                     </div>
                     
-                  </div>
-                  <div className="
-                   w-1/3">
+                    </div>
+                  <div className="w-[31%] m-auto max-md:w-auto h-auto block">
                     <img src="setting.svg" alt="setting" className='mx-auto' />
                     <div>
                     Unlock predictive HR insights with RIS, anticipate trends, make data-driven 
@@ -109,27 +109,26 @@ decisions, and stay ahead effortlessly.
                     </div>
                   </div>
                   
-                  <div className=" w-1/3">
+                  <div className=" w-[31%] m-auto max-md:w-auto h-auto block">
                     <img src="support.svg" alt="support" className='mx-auto' />
                     <div>
                     Unlock predictive HR insights with RIS, anticipate trends, make data-driven 
 decisions, and stay ahead effortlessly.
                     </div>
-                    
+                  </div> 
                   </div>
-                  </div>
+                  
+                  
               </div>
-              <div className="justify-center">
-                
-              </div>
+              
               <div className='bg-slate-400 py-[50px]  rounded-lg text-center bg-center w-6/7 h-auto  pb-4 px-6 my-[50px] mx-[20px] flex flexbox  justify-center align-middle   flex-wrap'>
                 <div className='font-bold text-2xl py-[30px]'>Features</div>
-                <div className="flex flexbox justify-between mx-[30px] flexwrap align-middle">
+                <div className="flex md:flex-row max-sm:flex-col justify-between  mx-[30px] w-[100%] flexwrap align-middle">
                   
-                  <div className='w-[431px]'>
-                  <img src="feature1.svg" alt="feature1" />
+                  <div className='w-full'>
+                  <img src="feature1.svg" alt="feature1" className=' hidden sm:block' />
                   </div>
-                    <div className='bg-slate-200 px-[15px] mx-[30px] my-[30px] rounded-2xl py-[30px] h-auto w-1/2 sm:w-[280px]'>
+                    <div className='bg-slate-200 px-[15px] mx-[30px] my-[30px] rounded-2xl py-[30px] h-auto w-full md:w-[98%] md:block'>
                         <h2 className='font-bold  my-[10px]'>Efficient Employee Database Management</h2>
                         <div className='font-thin text-start text-sm'>
                           Streamline your HR processes with our comprehensive database 
@@ -141,16 +140,16 @@ and a user-friendly interface. Experience hassle-free management of
                     </div>
                   
                 </div>
-                <div className="flex flexbox justify-between mx-[30px] flexwrap align-middle">
+                <div className="flex justify-center max-sm:flex-col gap-5 lg:flex-row sm:flex-col mx-[30px] flexwrap align-middle">
                   
-                    <div className='bg-slate-200 px-[15px] mx-[30px] rounded-2xl py-[30px] my-[30px] h-auto w-1/2 sm:w-[280px]'>
+                    <div className='bg-slate-200 px-[15px] mx-[30px] rounded-2xl py-[30px] my-[30px] h-auto w-1/2 max-sm:w-[98%]'>
                         <h2 className='font-bold  my-[10px]'>Employee Self-Service Portal</h2>
                         <div className='font-thin text-start text-sm'>
                           Empower your workforce with easy access to personal information, pay stubs, benefits enrollment, leave balances, and performance reviews. Reduce HR administrative burden with streamlined self-service capabilities
                         </div>
                     </div>
-                    <div className='w-[431px]'>
-                  <img src="feature2.svg" alt="feature1"  className=' ' />
+                    <div className='w-[50%]'>
+                  <img src="feature2.svg" alt="feature1"  className=' hidden sm:block' />
                   </div>
                 </div>
               </div>

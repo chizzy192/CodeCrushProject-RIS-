@@ -5,16 +5,7 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-  
-    screens:{
-      
-    },
-  extend: {
-    backgroundImage: {
-      'bodybg': "url('bodybg.svg')",
-      'ourquest':"url('ourquest.svg')",
-    },
+    extend: {},
   },
-},
   plugins: [],
 }
