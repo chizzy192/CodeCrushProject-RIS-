@@ -12,8 +12,8 @@ function ContacUs() {
         }}>
         <div className='text-white bg-blue-400 border-2 border-blue-500  w-3/4 h-auto rounded-lg pb-4 px-6  mx-auto block'
         >
-                    <h2 className='text-bold text-xl py-3 h-10%'>Reach Out, We're Here for You</h2>
-                    <p className='font-light px-[30px] h-20% py-2'>Don't hesitate to contact us for any assistance or inquiries. Our team is dedicated to ensuring your success with RIS. 
+                    <h2 className='text-bold text-xl py-3 h-10% sm:text-3xl'>Reach Out, We're Here for You</h2>
+                    <p className='font-light px-[30px] h-20% py-2 sm:text-lg'>Don't hesitate to contact us for any assistance or inquiries. Our team is dedicated to ensuring your success with RIS. 
 Let us help you make the most of your HR management journey.</p>
             </div>
             <div className="flex flexbox my-4 flex-wrap gap-[20%] justify-center">
@@ -32,10 +32,10 @@ Let us help you make the most of your HR management journey.</p>
 us today. Let's explore collaboration opportunities together."</div>
               </div>
               </div>
-              <div className="justify-center w-[42%] mx-[10px] py-[50px]">
-                <div className="text-black font-bold justify-center ">Please Fill Out This Ticket</div>
+              <div className="justify-center w-[42%] max-sm:w-[100%] mx-[10px] py-[50px]">
+                <div className="text-black font-bold justify-center sm:text-2xl">Please Fill Out This Ticket</div>
                 <div className=" bg-white my-40px rounded-3xl border-2  mx-auto md:w-auto h-auto border-black">
-                  <div className="mb-[20px] pt-[40px] px-[40px]">Support Ticket</div>
+                  <div className="mb-[20px] pt-[40px] px-[40px] sm:text-lg">Support Ticket</div>
                     <Form />
                 </div>
               </div>
