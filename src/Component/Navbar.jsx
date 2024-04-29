@@ -6,7 +6,7 @@ function Navbar() {
 const [menuOpen, setMenuOpen]  = useState(false);
 
   return (
-    <nav className=" flex w-full shadow:sticky top-0 justify-between align-middle bg-blue-900 ">
+    <nav className=" flex w-full sticky top-0 justify-between align-middle bg-blue-900 ">
       <div className=" items-start ">
         <img src={RISLogo} alt="Company Logo" className="mx-5 my-3" style={{ width: '150.58px', height: '56.4px', top: '6px', left: '21px' }} />
        </div>

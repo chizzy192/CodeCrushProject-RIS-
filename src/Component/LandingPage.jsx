@@ -63,7 +63,7 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
+                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-auto block space-x-[40px] rounded-lg">
                     
                     <div className=" justify-center mx-auto  ">
         
@@ -74,7 +74,7 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-[170px] block space-x-[40px] rounded-lg">
+                <div className="w-[280px] bg-slate-100 m-auto mb-[30px] h-auto block space-x-[40px] rounded-lg">
                     
                     <div className=" justify-center mx-auto  ">
         
