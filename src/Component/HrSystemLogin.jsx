@@ -27,8 +27,10 @@ const HRLoginScreen = () => {
         <div className="flex flex-col justify-between items-center w-1/2 bg-white" style={{ marginTop: "4px" }}>
           <div className="relative" style={{ marginTop: '3px' }}> {/* Adjusted margin-top */}
             <h1 className="text-black font-serif text-3xl font-semibold mt-13" style={{ textAlign: "center", marginBottom: '3px' }}>WELCOME BACK!</h1> {/* Adjusted margin-top */}
-            <div className="bg-blue-800 mt-7 rounded-tl-2xl flex flex-col items-center" style={{ width: "600px", height: "550px" }}>
-              <img src={Logo} alt="Company Logo" className="mt-0" style={{ width: "200px" }} />
+            <div className="bg-blue-800 max-md:mx-5 mt-7 rounded-tl-2xl flex flex-col items-center" style={{ width: "600px", height: "550px" }}>
+              <img src={Logo} alt="Company Logo" className="mt-0 hidden max-md:block" style={{ width: "200px" }} />
+              
+              <form action="" className='max-md:mx-4'>
               <h2 className="text-white font-serif text-2xl font-semibold mt-6">Please Fill in your details below.</h2>
               <div className="relative mt-10" style={{ width: "400px", height: "50px", padding: "10px 0px 0px 0px", gap: "10px", borderRadius: "20px 0px 0px 0px", opacity: "0px" }}>
                 <input
@@ -51,6 +53,7 @@ const HRLoginScreen = () => {
               </div>
               <p className="text-white cursor-pointer mt-4" style={{ marginTop: '80px', fontFamily: 'Roboto Serif', fontSize: '20px', fontWeight: '400', lineHeight: '43.42px', textAlign: 'center' }}>Forgot Details?</p>
               <button className="w-117 h-61 px-4 rounded-tl-xl rounded-bl-xl bg-white mt-6" style={{ marginTop: '80px', fontFamily: 'Roboto Serif', fontSize: '35px', fontWeight: '400', lineHeight: '40.99px', textAlign: 'center' }}>Login</button>
+              </form>
             </div>
           </div>
           <p className="text-black font-serif text-lg font-semibold mt-6 mb-6" style={{ textAlign: 'center', marginBottom: "60px" }}>HR Management System of the Future...</p>

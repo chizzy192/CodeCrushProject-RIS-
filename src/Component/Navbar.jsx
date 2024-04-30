@@ -28,7 +28,9 @@ const [menuOpen, setMenuOpen]  = useState(false);
             <li className="text-white py-2 sm:text-lg hover:underline active:bg-white active:text-black rounded-lg active:no-underline">Pricing</li>
             </ul>
             <ul className="flex flexbox flex-wrap w-auto text-center">
-          <li className="text-white py-2 sm:text-lg hover:underline active:bg-white active:text-black rounded-lg active:no-underline"><NavLink to="/signup">Sign Up</NavLink></li>
+          
+        <li className="text-white py-2 sm:text-lg hover:underline active:bg-white active:text-black rounded-lg active:no-underline"><NavLink to="/signup">Sign Up</NavLink></li>
+        <li className="text-white py-2 sm:text-lg hover:underline active:bg-white active:text-black rounded-lg active:no-underline"><NavLink to="/hr-admin-login">Sign In</NavLink></li>
           <li className=" bg-white text-black  sm:text-lg  hover:underline active:bg-black active:text-white  active:no-underline px-4 py-2 rounded-lg">Request for Free Trial</li>
         </ul>
           
